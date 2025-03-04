@@ -1,5 +1,5 @@
-@import url('./reset.css');
-@import url('./fonts.css');
-@import url('./content.css');
-@import url('./animation.css');
-@import url('./adaptive.css');
+@import 'reset.css';
+@import 'fonts.css';
+@import 'content.css';
+@import 'adaptive.css';
+@import 'animation.css';
