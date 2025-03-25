@@ -1,10 +1,9 @@
 body {
-    /* min-height: 100vh; */
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
+    overflow: hidden;
     margin: 0;
     padding: 0;
     cursor: url("../images/cursorAuto.svg"), auto;
@@ -18,8 +17,7 @@ body {
         align-items: center;
         position: relative;
         width: 100%;
-        min-height: 100vh;
-        height: auto;
+        height: 100vh;
     }
     .video1 {
         position: absolute;
@@ -37,7 +35,7 @@ body {
         font-size: 2vw;
         z-index: 2;
     }
-    .img_container {
+    .img_container1 {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -49,6 +47,8 @@ body {
         position: absolute;
         width: 80vw;
         top: 37%;
+        left: 50%;
+        transform: translateX(-50%);
     }
     
     .button1 {
@@ -73,11 +73,9 @@ body {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        min-height: 100vh;
-        height: auto;
+        height: 100vh;
         position: relative;
-        margin-top: 0; 
-        padding-top: 5vw;
+        margin-top: 7vw;
     }
     
     .marquee_container {
@@ -94,21 +92,110 @@ body {
     .marquee_text {
         font-family: 'TTTravels-Regular';
         font-size: 2vw;
-        font-weight: bold;
         color: black;
         white-space: nowrap;
         width: max-content;
         animation: marquee 10s linear infinite;
         z-index: 2;
     }
-    
-    @keyframes marquee {
-        from {
-            transform: translateX(100%);
-        }
-        to {
-            transform: translateX(-100%);
-        }
+
+    .text2 {
+        position: absolute;
+        color: white;
+        font-family: 'TTTravels-Regular';
+        font-size: 2vw;
+        top: 35%;
     }
 
-    
+    .passwordfield {
+        position: absolute;
+        top: 50%;
+        border-radius: 47px;
+        width: 42vw;
+        height: 6vw;
+        cursor: url("../images/cursorWrite.svg"), text;
+        z-index: 1;
+    }
+
+    .img_container2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+      }
+      .img2 {
+          z-index: 2;
+          position: absolute;
+          width: 30vw;
+          top: 55%;
+          left: 5%;
+      }
+      
+
+      .img_container3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+      }
+      .img3 {
+          z-index: 2;
+          position: absolute;
+          width: 8vw;
+          top: 7%;
+          left: 50%;
+          rotate: -70deg;
+      }
+
+      .img_container4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+      }
+      .img4 {
+          z-index: 2;
+          position: absolute;
+          width: 13vw;
+          top: 10%;
+          left: 10%;
+          rotate: -30deg;
+      }
+
+      .img_container5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+      }
+      .img5 {
+          z-index: 2;
+          position: absolute;
+          width: 10vw;
+          top: 39%;
+          left: 30%;
+          rotate: 150deg;
+      }
+      .img_container6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+      }
+      .img6 {
+          z-index: 2;
+          position: absolute;
+          width: 7vw;
+          top: 50%;
+          left: 78%;
+          rotate: 60deg;
+      }
+
+
+
+      
