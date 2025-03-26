@@ -10,6 +10,9 @@ body {
     background-color: rgba(27, 0, 78, 1);
     flex-grow: 1;
     } 
+    .section {
+        overflow: hidden;
+    }
     
     .first {
         display: flex;
@@ -123,79 +126,289 @@ body {
         align-items: center;
         width: 100%;
         height: auto;
-      }
-      .img2 {
-          z-index: 2;
-          position: absolute;
-          width: 30vw;
-          top: 55%;
-          left: 5%;
-      }
-      
-
-      .img_container3 {
+        cursor: url("../images/cursorPointer.png"), pointer;
+    }
+    .img2 {
+        z-index: 2;
+        position: absolute;
+        width: 27vw;
+        top: 53%;
+        left: 2%;
+    }
+    
+    .img_container3 {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
         height: auto;
-      }
-      .img3 {
-          z-index: 2;
-          position: absolute;
-          width: 8vw;
-          top: 7%;
-          left: 50%;
-          rotate: -70deg;
-      }
-
-      .img_container4 {
+        cursor: url("../images/cursorPointer.png"), pointer;
+    }
+    .img3 {
+        z-index: 2;
+        position: absolute;
+        width: 8vw;
+        top: 7%;
+        left: 50%;
+        rotate: -70deg;
+    }
+    
+    .img_container4 {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
         height: auto;
-      }
-      .img4 {
-          z-index: 2;
-          position: absolute;
-          width: 13vw;
-          top: 10%;
-          left: 10%;
-          rotate: -30deg;
-      }
-
-      .img_container5 {
+        cursor: url("../images/cursorPointer.png"), pointer;
+    }
+    .img4 {
+        z-index: 2;
+        position: absolute;
+        width: 13vw;
+        top: 10%;
+        left: 10%;
+        rotate: -30deg;
+    }
+    
+    .img_container5 {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
         height: auto;
-      }
-      .img5 {
-          z-index: 2;
-          position: absolute;
-          width: 10vw;
-          top: 39%;
-          left: 30%;
-          rotate: 150deg;
-      }
-      .img_container6 {
+        cursor: url("../images/cursorPointer.png"), pointer;
+    }
+    .img5 {
+        z-index: 2;
+        position: absolute;
+        width: 10vw;
+        top: 39%;
+        left: 30%;
+        rotate: 150deg;
+    }
+    
+    .img_container6 {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
         height: auto;
-      }
-      .img6 {
-          z-index: 2;
-          position: absolute;
-          width: 7vw;
-          top: 50%;
-          left: 78%;
-          rotate: 60deg;
-      }
+        cursor: url("../images/cursorPointer.png"), pointer;
+    }
+    .img6 {
+        z-index: 2;
+        position: absolute;
+        width: 7vw;
+        top: 50%;
+        left: 78%;
+        rotate: 60deg;
+    }
+    
+    .img_container7 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        cursor: url("../images/cursorPointer.png"), pointer;
+    }
+    .img7 {
+        z-index: 2;
+        position: absolute;
+        width: 5vw;
+        top: 10%;
+        left: 3%;
+        rotate: 10deg;
+    }
+    
+    .img_container8 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        cursor: url("../images/cursorPointer.png"), pointer;
+    }
+    .img8 {
+        z-index: 2;
+        position: absolute;
+        width: 6vw;
+        top: 65%;
+        left: 20%;
+        rotate: 100deg;
+    }
+    
+    .img_container9 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        cursor: url("../images/cursorPointer.png"), pointer;
+    }
+    .img9 {
+        z-index: 2;
+        position: absolute;
+        width: 7vw;
+        top: 87%;
+        left: 50%;
+        rotate: 200deg;
+    }
+    
+    .img_container10 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        cursor: url("../images/cursorPointer.png"), pointer;
+    }
+    .img10 {
+        z-index: 2;
+        position: absolute;
+        width: 8vw;
+        top: 10%;
+        left: 90%;
+        rotate: 300deg;
+    }
+    
+    .img_container11 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        cursor: url("../images/cursorPointer.png"), pointer;
+    }
+    .img11 {
+        z-index: 2;
+        position: absolute;
+        width: 11vw;
+        top: 70%;
+        left: 90%;
+        rotate: 30deg;
+    }
+    
+    .img_container12 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        cursor: url("../images/cursorPointer.png"), pointer;
+    }
+    .img12 {
+        z-index: 2;
+        position: absolute;
+        width: 15vw;
+        top: 80%;
+        left: 36%;
+        rotate: -100deg;
+    }
+    
+    .img_container13 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        cursor: url("../images/cursorPointer.png"), pointer;
+    }
+    .img13 {
+        z-index: 2;
+        position: absolute;
+        width: 8vw;
+        top: 59%;
+        left: 62%;
+        rotate: 30deg;
+    }
 
+    .img_container14 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        cursor: url("../images/cursorPointer.png"), pointer;
+    }
+    .img14 {
+        z-index: 2;
+        position: absolute;
+        width: 18vw;
+        top: 57%;
+        left: 67%;
+        rotate: 270deg;
+    }
+    .img_container15 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        cursor: url("../images/cursorPointer.png"), pointer;
+    }
+    .img15 {
+        z-index: 2;
+        position: absolute;
+        width: 14vw;
+        top: 13%;
+        left: 72%;
+        rotate: 130deg;
+    }
 
-
+    .img2 {
+        animation: spin1 8s linear infinite;
+    }
+    
+    .img3 {
+        animation: spin2 3s ease-in-out infinite;
+    }
+    
+    .img4 {
+        animation: spin3 5s linear infinite;
+    }
+    
+    .img5 {
+        animation: spin4 2s linear infinite;
+    }
+    
+    .img6 {
+        animation: spin5 6s ease-in-out infinite;
+    }
+    
+    .img7 {
+        animation: spin1 7s linear infinite;
+    }
+    
+    .img8 {
+        animation: spin2 4s ease-in-out infinite;
+    }
+    
+    .img9 {
+        animation: spin3 5s linear infinite;
+    }
+    
+    .img10 {
+        animation: spin4 3s linear infinite;
+    }
+    
+    .img11 {
+        animation: spin5 5s ease-in-out infinite;
+    }
+    
+    .img12 {
+        animation: spin1 6s linear infinite;
+    }
+    
+    .img13 {
+        animation: spin2 2.5s ease-in-out infinite;
+    }
+    
+    .img14 {
+        animation: spin3 4s linear infinite;
+    }
+    
+    .img15 {
+        animation: spin4 3.5s linear infinite;
+    }
       

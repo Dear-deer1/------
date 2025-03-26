@@ -6,3 +6,31 @@
         transform: translateX(100%);
     }
 }
+
+@keyframes spin1 {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  @keyframes spin2 {
+    0% { transform: rotate(-15deg); }
+    50% { transform: rotate(15deg); }
+    100% { transform: rotate(-15deg); }
+  }
+  
+  @keyframes spin3 {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0deg); }
+  }
+  
+  @keyframes spin4 {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    75% { transform: rotate(-10deg); }
+  }
+  
+  @keyframes spin5 {
+    0% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(180deg) scale(0.9); }
+    100% { transform: rotate(360deg) scale(1); }
+  }
