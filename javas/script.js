@@ -32,33 +32,26 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-const passwordField = document.getElementById("passwordField");
-const errorMessage = document.createElement("div");
-errorMessage.textContent = "Забыли ID? Введите год создания лаборатории";
-errorMessage.style.color = "white";
-errorMessage.style.fontFamily = "TTTravels-Regular";
-errorMessage.style.fontSize = "1.5vw";
-errorMessage.style.position = "absolute";
-errorMessage.style.top = "60%";
-errorMessage.style.display = "none";
-document.body.appendChild(errorMessage);
 
-passwordField.addEventListener("keypress", function (event) {
-    if (event.key === "Enter") {
-        if (passwordField.value === "2024") {
-            
-            document.querySelector(".third").scrollIntoView({ behavior: "smooth" });
+document.addEventListener("DOMContentLoaded", function () {
+    const passwordField = document.getElementById("passwordField");
+
+    function switchSection() {
+        const secondSection = document.querySelector(".second");
+        const thirdSection = document.querySelector(".third");
+
+        if (secondSection && thirdSection) {
+            secondSection.style.transform = "translateY(-100vh)"; 
+            thirdSection.style.transform = "translateY(0)"; 
         } else {
-           
-            errorMessage.style.display = "block";
+            console.error("Секции .second или .third не найдены");
         }
     }
-});
 
-passwordField.addEventListener("keypress", function (event) {
-    if (event.key === "Enter") {
-        checkPassword();
-    }
+    passwordField.addEventListener("keypress", function (event) {
+        if (event.key === "Enter" && passwordField.value === "2024") {
+            switchSection(); 
+        }
+    });
 });
-
 
