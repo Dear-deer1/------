@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const thirdSection = document.querySelector(".third");
 
         if (secondSection && thirdSection) {
-            secondSection.style.transform = "translateY(-100vh)"; 
+            secondSection.style.transform = "translateY(+100vh)"; 
             thirdSection.style.transform = "translateY(0)"; 
         } else {
             console.error("Секции .second или .third не найдены");
