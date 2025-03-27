@@ -39,13 +39,9 @@ document.addEventListener("DOMContentLoaded", function () {
     function switchSection() {
         const secondSection = document.querySelector(".second");
         const thirdSection = document.querySelector(".third");
+        let height2 = secondSection.innerHeight
 
-        if (secondSection && thirdSection) {
-            secondSection.style.transform = "translateY(+100vh)"; 
-            thirdSection.style.transform = "translateY(0)"; 
-        } else {
-            console.error("Секции .second или .third не найдены");
-        }
+        thirdSection.scrollIntoView({ behavior: "smooth" });
     }
 
     passwordField.addEventListener("keypress", function (event) {
