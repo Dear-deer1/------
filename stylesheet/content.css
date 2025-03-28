@@ -730,3 +730,9 @@ body {
     z-index: 4;
     cursor: url("../images/cursorWrite.svg"), text;
 }
+.Modelcontainer {
+    position: absolute;
+    width: 40vw;
+    height: 40vw;
+    left: 40%;
+}

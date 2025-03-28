@@ -2,9 +2,11 @@ import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
+const class_Event = document.getElementById('threeDModelContainer')//добавь сюда див, в котором будет 3д
+
 // Сцена
 const scene = new THREE.Scene();
-scene.background = new THREE.Color('#0075F2'); // Задайте нужный цвет или используйте текстуру
+scene.background = new THREE.Color('#9400CA'); // Задайте нужный цвет или используйте текстуру
 
 // Камера
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -33,7 +35,7 @@ const loader = new GLTFLoader();
 let model = null;
 
 loader.load(
-    'C:\Users\Алена\Desktop\ДашаАП\3ds\LUNGS1.glb', // Путь к модели
+    './3ds/LUNGS1.glb', // Путь к модели
     (gltf) => {
         model = gltf.scene;
         model.position.set(0, 0, 0); // Устанавливаем позицию модели

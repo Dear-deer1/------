@@ -114,6 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+  
   document.getElementById('modificationButton').addEventListener('click', function() {
    
     this.classList.toggle('active');
