@@ -104,3 +104,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+
+    const circles = document.querySelectorAll('.circle');
+    circles.forEach(circle => {
+      circle.addEventListener('click', function() {
+        this.classList.toggle('active');
+      });
+    });
+  });
+
+  document.getElementById('modificationButton').addEventListener('click', function() {
+   
+    this.classList.toggle('active');
+    
+});

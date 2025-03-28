@@ -3,16 +3,14 @@ body {
     height: auto;
     display: flex;
     flex-direction: column;
-    overflow: hidden; 
     margin: 0;
     padding: 0;
     cursor: url("../images/cursorAuto.svg"), auto;
     background-color: rgba(27, 0, 78, 1);
     flex-grow: 1;
+    overflow: hidden;
     } 
-     .section {
-        overflow: hidden;
-    }  
+     
     .first {
         display: flex;
         justify-content: center;
@@ -20,6 +18,7 @@ body {
         position: relative;
         width: 100%;
         height: 100vh;
+        overflow: hidden;
     }
     .video1 {
         position: absolute;
@@ -77,6 +76,7 @@ body {
         width: 100%;
         height: 100vh;
         position: relative;
+        overflow: hidden;
         margin-top: 7vw;
     }
     
@@ -419,6 +419,7 @@ body {
      width: 100%;
      height: 100vh;
      position: relative;
+     overflow: hidden;
      /* margin-top: 7vw; */
     }
     .img_container16 {
@@ -569,6 +570,8 @@ body {
     width: 100%;
     height: 100vh;
     position: relative;
+    overflow-y: auto !important; 
+    scroll-snap-align: none;
    }
   
    .marquee_container3 {
@@ -615,7 +618,7 @@ body {
     border: 4px solid white;
     border-radius: 2.5vw;
     width: 16vw;
-    height: 64vw;
+    height: 70vw;
 }
 
 .info_block {
@@ -636,13 +639,25 @@ body {
     border-radius: 44px;
     width: 13vw;
     height: 2.5vw;
+    transition: all 0.3s ease; 
+    cursor: url("../images/cursorPointer.png"), pointer;
 }
-
+.button2.active {
+    background-color: rgba(148, 0, 202, 1) !important;
+    border-color: white !important;
+}
 .button2_text {
     color: black;
     font-family: 'TTTravels-Medium';
     font-size: 1vw;
+    transition: all 0.3s ease; 
 }
+
+.button2.active .button2_text {
+    color: white !important;
+}
+
+
 .block_container1 {
     display: flex;
     position: relative;
@@ -654,10 +669,64 @@ body {
 .circle {
     position: absolute;
     background-color: white;
-    width: 20px;
-    height: auto;
+    width: 1.2vw;
+    height: 1.2vw;
     border-radius: 100%;
     z-index: 3;
-    top: 50%;
+    top: 49%;
     opacity: 100%;
+    cursor: url("../images/cursorPointer.png"), pointer;
+    transition: background-color 0.3s;
+}
+.circle.active {
+    background-color: rgba(148, 0, 202, 1) !important;
+  }
+
+.circle1 {
+    left: 1%;
+}
+.circle2 {
+    left: 11%;
+}
+.circle3 {
+    left: 21%;
+}
+.circle4 {
+    left: 31%;
+}
+.circle5 {
+    left: 41%;
+}
+.circle6 {
+    left: 51%;
+}
+.circle7 {
+    left: 61%;
+}
+.circle8 {
+    left: 71%;
+}
+.circle9 {
+    left: 81%;
+}
+.circle10 {
+    left: 91%;
+}
+
+.block_container2 {
+    position: relative;
+    padding-left: 10%;
+}
+.modal {
+    position: absolute;
+    top: 30%;
+}
+.textInput{
+    background-color: white;
+    width: 12.5vw;
+    height: 2vw;
+    top: 50%;
+    border-radius: 10px;
+    z-index: 4;
+    cursor: url("../images/cursorWrite.svg"), text;
 }

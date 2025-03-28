@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="./stylesheet/style.css">
     <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon">
     <script src="./javas/script.js"></script>
+    <script src="./javas/3d.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
 </head>
 <body>
     <section id="section1" class="first">
@@ -86,6 +88,8 @@
 
      <div class="img_container20"> <img class="text4section" src="./images/text4sectoin.svg" alt="текст на 4 секции"></div>
 
+
+     
      <div class="info_container">
         <p class="info_text"> Информация:</p>
         <img class="info_block block1" src="./images/block1.svg" alt="1инфо блок">
@@ -105,14 +109,23 @@
             <div id="circle10" class="circle circle10"></div>
         </div>
 
-        <div class="block_container2"><img class="info_block block4" src="./images/block4.svg" alt="4 инфо блок"></div>
+        <div class="block_container2"><img class="info_block block4" src="./images/block4.svg" alt="4 инфо блок">
+            <div id="textModal" class="modal">
+                <textarea id="textInput" class="textInput" placeholder="Введите номер 3D-модели"></textarea>
+        </div>
 
         <button id="modificationButton" class="button2">
             <span class="button2_text">Эксперимент</span>
            </button>
+
      </div>
 
     </section>
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r164/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.164.1/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="./javas/3d.js"></script>
+    <script src="./javas/script.js"></script>
 </body>
 </html>
