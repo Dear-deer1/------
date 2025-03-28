@@ -3,14 +3,24 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 const class_Event = document.getElementById('threeDModelContainer')//добавь сюда див, в котором будет 3д
+class_Event.appendChild(renderer.domElement);
 
 // Сцена
 const scene = new THREE.Scene();
-scene.background = new THREE.Color('#9400CA'); // Задайте нужный цвет или используйте текстуру
+scene.background = new THREE.Color('#1B004E'); // Задайте нужный цвет или используйте текстуру
 
 // Камера
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 camera.position.z = 5;
+
+function onWindowResize() {
+    const container = class_Event.getBoundingClientRect();
+    camera.aspect = container.width / container.height;
+    camera.updateProjectionMatrix();
+    renderer.setSize(container.width, container.height);
+}
+window.addEventListener('resize', onWindowResize);
+onWindowResize();
 
 // Рендерер
 const renderer = new THREE.WebGLRenderer();
@@ -38,8 +48,8 @@ loader.load(
     './3ds/LUNGS1.glb', // Путь к модели
     (gltf) => {
         model = gltf.scene;
-        model.position.set(0, 0, 0); // Устанавливаем позицию модели
-        model.scale.set(1, 1, 1); // Масштабируем модель
+        model.position.set(1, 1, 1); // Устанавливаем позицию модели
+        model.scale.set(3, 3, 3); // Масштабируем модель
         scene.add(model);
     },
     undefined,
@@ -59,9 +69,9 @@ function animate() {
 
     // Вращение модели
     if (model) {
-        model.rotation.y += 0.001; // Вращение вокруг оси Y
-        model.rotation.x -= 0.001; // (опционально) вращение вокруг оси X
-        model.rotation.z -= 0.001;
+        // model.rotation.y += 0.001; // Вращение вокруг оси Y
+        // model.rotation.x -= 0.001; // (опционально) вращение вокруг оси X
+        model.rotation.z -= 1;
     }
 
     renderer.render(scene, camera);
