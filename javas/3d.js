@@ -3,24 +3,14 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 const class_Event = document.getElementById('threeDModelContainer')//добавь сюда див, в котором будет 3д
-class_Event.appendChild(renderer.domElement);
 
 // Сцена
 const scene = new THREE.Scene();
-scene.background = new THREE.Color('#1B004E'); // Задайте нужный цвет или используйте текстуру
+scene.background = new THREE.Color('#9400CA'); // Задайте нужный цвет или используйте текстуру
 
 // Камера
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 camera.position.z = 5;
-
-function onWindowResize() {
-    const container = class_Event.getBoundingClientRect();
-    camera.aspect = container.width / container.height;
-    camera.updateProjectionMatrix();
-    renderer.setSize(container.width, container.height);
-}
-window.addEventListener('resize', onWindowResize);
-onWindowResize();
 
 // Рендерер
 const renderer = new THREE.WebGLRenderer();
@@ -28,7 +18,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.toneMapping = THREE.LinearToneMapping; // Установка toneMapping
 renderer.toneMappingExposure = 1; // Установка exposure
-document.body.appendChild(renderer.domElement);
+class_Event.appendChild(renderer.domElement);
 
 // Освещение
 // Ambient light (непрямое освещение)
@@ -61,7 +51,7 @@ const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true; // Плавность вращения
 controls.dampingFactor = 0.01;
 controls.minDistance = 1; // Минимальное приближение камеры
-controls.maxDistance = 200; // Максимальное удаление камеры
+controls.maxDistance = 10; // Максимальное удаление камеры
 controls.target.set(0, 0, 0);
 // Анимация
 function animate() {
@@ -69,12 +59,10 @@ function animate() {
 
     // Вращение модели
     if (model) {
-        // model.rotation.y += 0.001; // Вращение вокруг оси Y
-        // model.rotation.x -= 0.001; // (опционально) вращение вокруг оси X
-        model.rotation.z -= 1;
+        model.rotation.y += 0.001; // Вращение вокруг оси Y
+        model.rotation.x -= 0.001; // (опционально) вращение вокруг оси X
+        model.rotation.z -= 0.001;
     }
 
     renderer.render(scene, camera);
 }
-
-animate();

@@ -572,6 +572,7 @@ body {
     position: relative;
     overflow-y: auto !important; 
     scroll-snap-align: none;
+    isolation: isolate; 
    }
   
    .marquee_container3 {
@@ -730,9 +731,22 @@ body {
     z-index: 4;
     cursor: url("../images/cursorWrite.svg"), text;
 }
-.Modelcontainer {
+/* .Modelcontainer {
     position: absolute;
     width: 40vw;
     height: 40vw;
     left: 40%;
+} */
+canvas {
+    display: block !important;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    width: 40vw;
+    height: 40vw;
+}
+#threeDModelContainer {
+    border: 2px solid white;
+    pointer-events: all; 
+    overflow: visible;
 }
