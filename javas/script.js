@@ -51,3 +51,56 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    const scrollButton = document.getElementById("scrollButton");
+    const section2 = document.getElementById("section2");
+    const section4 = document.getElementById("section4");
+    
+   
+    scrollButton.addEventListener("click", function () {
+        section2.scrollIntoView({ behavior: "smooth" });
+    });
+
+   
+    let clickedFlasks = 0;
+    
+    function handleFlaskClick() {
+        clickedFlasks++;
+        
+        
+        if(clickedFlasks === 3) {
+           
+            section4.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+            
+            
+            section4.style.opacity = 1;
+        }
+    }
+
+   
+    document.getElementById('flask_img1').addEventListener('click', function() {
+        this.style.display = 'none';
+        document.getElementById('empty_flask1').style.opacity = '0';
+        document.getElementById('flask_img1_1').style.opacity = '1';
+        handleFlaskClick();
+    });
+
+    document.getElementById('flask_img2').addEventListener('click', function() {
+        this.style.display = 'none';
+        document.getElementById('empty_flask2').style.opacity = '0';
+        document.getElementById('flask_img1_2').style.opacity = '1';
+        handleFlaskClick();
+    });
+
+    document.getElementById('flask_img3').addEventListener('click', function() {
+        this.style.display = 'none';
+        document.getElementById('empty_flask3').style.opacity = '0';
+        document.getElementById('flask_img1_3').style.opacity = '1';
+        handleFlaskClick();
+    });
+});
+
