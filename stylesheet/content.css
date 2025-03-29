@@ -731,22 +731,12 @@ body {
     z-index: 4;
     cursor: url("../images/cursorWrite.svg"), text;
 }
-/* .Modelcontainer {
-    position: absolute;
-    width: 40vw;
-    height: 40vw;
-    left: 40%;
-} */
-canvas {
-    display: block !important;
-    image-rendering: -moz-crisp-edges;
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
-    width: 40vw;
-    height: 40vw;
+.LungsCarousel {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
 }
-#threeDModelContainer {
-    border: 2px solid white;
-    pointer-events: all; 
-    overflow: visible;
-}
+
+
+
