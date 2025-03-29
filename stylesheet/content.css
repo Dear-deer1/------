@@ -731,12 +731,36 @@ body {
     z-index: 4;
     cursor: url("../images/cursorWrite.svg"), text;
 }
-.LungsCarousel {
+
+.img_container21 {
     display: flex;
-    position: relative;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
+  width: 100%;
+  height: auto;
 }
 
 
+.lungs1 {
+    position: absolute;
+   width: 50vw;
+   height: 50vw;
+   left: 15%;
+   top: 5%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    overflow-y: auto !important; 
+    scroll-snap-align: none;
+    isolation: isolate; 
+}
+
+.footer_text {
+    font-family: 'TTTravels-Medium';
+    color: white;
+}
 

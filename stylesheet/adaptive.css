@@ -1,0 +1,169 @@
+@media (max-width: 1440px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .first {
+        height: 70vw;
+    }
+    .second {
+        height: 70vw;
+    }
+    .third {
+        height: 70vw;
+    }
+    .fourth {
+        height: 70vw;
+    }
+    .video1 {
+        height: 70vw;
+        object-fit: cover;
+    }
+    
+    .text1 {
+        font-size: 2vw;
+        top: 12%;
+    }
+    
+    .img1 {
+        width: 49vw;
+        top: 35%;
+    }
+    
+    .button1 {
+        width: 19vw;
+        height: 6vw;
+        top: 77%;
+        border-radius: 3vw;
+    }
+    
+    .button1_text {
+        font-size: 2vw;
+    }
+
+    .marquee_text {
+        font-size: 2vw;
+    }
+    
+    .text2 {
+        font-size: 2vw;
+    }
+    
+    .passwordfield {
+        width: 29vw;
+        height: 5vw;
+        border-radius: 3vw;
+    }
+
+    .flask_container {
+        width: 33vw;
+        height: 10vw;
+        border-radius: 6vw;
+    }
+    
+    .flask {
+        width: 4vw;
+    }
+
+    .info_container {
+        width: 21vw;
+        height: 45vw;
+        border-radius: 2vw;
+    }
+    
+    .info_block {
+        width: 18vw;
+    }
+    
+    .button2 {
+        width: 14vw;
+        height: 3vw;
+        border-radius: 3vw;
+    }
+    
+    .button2_text {
+        font-size: 1vw;
+    }
+    
+    .lungs1 {
+        width: 42vw;
+        height: 42vw;
+    }
+    
+    .circle {
+        width: 1vw;
+        height: 1vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    .text1 {
+        font-size: 2vw;
+    }
+    
+    .img1 {
+        width: 56vw;
+    }
+    
+    .marquee_text {
+        font-size: 2vw;
+    }
+    
+    .lungs1 {
+        width: 49vw;
+        height: 49vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .text1 {
+        font-size: 3vw;
+        top: 15%;
+        width: 80vw;
+    }
+    
+    .button1 {
+        width: 26vw;
+        height: 8vw;
+        top: 70%;
+    }
+    
+    .flask_container {
+        width: 63vw;
+        height: 13vw;
+    }
+    
+    .info_container {
+        width: 80vw;
+        margin-left: 10vw;
+    }
+    
+    .lungs1 {
+        width: 80vw;
+        height: 80vw;
+        left: 10vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .text1 {
+        font-size: 4vw;
+    }
+    
+    .button1_text {
+        font-size: 3vw;
+    }
+    
+    .marquee_text {
+        font-size: 3vw;
+    }
+    
+    .passwordfield {
+        height: 10vw;
+    }
+    
+    .button2 {
+        width: 31vw;
+        height: 7vw;
+    }
+}

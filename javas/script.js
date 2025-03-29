@@ -120,3 +120,16 @@ document.addEventListener('DOMContentLoaded', function() {
     this.classList.toggle('active');
     
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const modificationButton = document.getElementById("modificationButton");
+    
+    modificationButton.addEventListener("click", function () {
+       
+        window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: "smooth"
+        });
+    });
+});
